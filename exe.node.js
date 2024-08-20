@@ -149,3 +149,215 @@ else if (IMC > 30 && IMC <39.9) {
 else if (IMC > 40) {
     console.log("Obesidade Grave");
 }
+
+
+// Aula 04
+
+
+console.log("Ex 1") 
+
+var Frase = "A morte é como o vento, está sempre ao meu lado";
+console.log(Frase ,Frase.length);
+console.log(Frase.toUpperCase());
+
+console.log("Ex 2") 
+
+var A = null;
+var B = undefined;
+
+console.log(A,B)
+
+console.log("Ex 3") 
+
+String(2);
+String(undefined);
+String(true);
+
+console.log(String(2),String(undefined),String(true));
+
+console.log("Ex 4")
+
+
+let Valor = 1611;
+let letras = "Rico";
+let ConvValxLetr = Valor.toString();
+let ConvLetrxVal = Number(letras);
+console.log(ConvValxLetr);
+console.log(ConvLetrxVal);
+console.log(typeof ConvValxLetr); // Deve exibir "string"
+console.log(typeof ConvLetrxVal);
+
+console.log("Ex 5")
+
+var poema = "Can you believe this?"
+
+console.log(poema.toUpperCase(), poema.toLowerCase());
+
+
+console.log("Ex 6")
+
+
+let saldo = 1000;        
+let deposito = 200;    
+let saque = 150;       
+
+
+let operacao = 'deposito'; 
+
+
+if (operacao === 'deposito') {
+    saldo += deposito; 
+} else if (operacao === 'saque') {
+    saldo -= saque;   
+} else {
+    console.log('Operação inválida'); 
+}
+
+
+console.log(saldo);
+
+console.log("Ex 7")
+
+
+var num = 8;
+
+var resp = num % 2 === 0 ? 'Par' : 'Ímpar';
+console.log(resp);
+
+console.log("Ex 8")
+
+
+var UserON = true;
+var Admin = false;
+
+if (UserON == true && Admin == true) {
+    console.log("Usário está Logado e tem permissão de Admin")
+}
+else if (UserON == false && Admin == true) {
+     console.log("Usuario não está logado, mas tem permissão de Admin")
+}
+else if (UserON == true && Admin == false) {
+     console.log("Usuario está logado, mas não tem permissão de Admin")
+}
+else {
+     console.log("Usuario não está logado e nem tem permissão de Admin")
+}
+
+
+console.log("Ex 9")
+
+var pizza = false;
+var lanche = false;
+var arroz = false;
+
+console.log("Comeu besteira na janta?");
+
+if (pizza === true || lanche === true) {
+    console.log("Comeu besteira")
+}
+else {
+    console.log("Não Comeu besteira")
+}
+
+console.log("Ex 10")
+
+idademin = 18;
+idadeusu = 26;
+
+if (idadeusu > idademin) {
+    console.log("Pode comprar o ingresso")
+}
+else {
+    console.log("Proibido a venda do ingresso")
+}
+
+console.log("Ex 11")
+
+function frases(nome) {
+    return "O nome dela é " + nome + "! e eu encontrei ela no Tinder";
+}
+
+
+let nomePessoa = "Jenifer";
+let mensagem = frases(nomePessoa);
+
+console.log(mensagem);
+
+console.log("Ex 12")
+
+function MaiordeIdade(idade2) {
+    if (idade2 >= 18){
+        return "Maior de idade";
+    }
+    else {
+        return "Menor de idade";
+    }
+}
+var idade = 19;
+let mensagem2 = MaiordeIdade(idade);
+
+console.log(mensagem2);
+
+console.log("Ex 13")
+
+function Palindromo(str) {
+  
+    let arrayDeCaracteres = str.split('');
+    let arrayInvertido = arrayDeCaracteres.reverse();
+    let strInvertida = arrayInvertido.join('');
+    return str === strInvertida;
+}
+
+
+let texto = "natan";
+let resultado = Palindromo(texto);
+
+console.log("O texto \"" + texto + "\" é palíndromo? " + resultado);
+
+
+console.log("Ex 14")
+
+function encontrarMaior(a, b, c) {
+ 
+    let maior;
+
+    
+    if (a >= b && a >= c) {
+        maior = a;
+    } else if (b >= a && b >= c) {
+        maior = b;
+    } else {
+        maior = c;
+    }
+
+    
+    return maior;
+}
+
+
+let numero1 = 15; 
+let numero2 = 22;
+let numero3 = 10;
+
+let maiorNumero = encontrarMaior(numero1, numero2, numero3);
+
+
+console.log("O maior número é:", maiorNumero);
+
+console.log("Ex 15")
+
+function calculaPotencia(Base, expoente) {
+    
+    let Resultado = Base ** expoente;
+    
+   
+    return Resultado;
+}
+
+let Base = 2;       
+let expoente = 3;
+
+let Resultado = calculaPotencia(Base, expoente);
+
+
+console.log(Base + " elevado à potência" + expoente + " é igual a " + Resultado);
